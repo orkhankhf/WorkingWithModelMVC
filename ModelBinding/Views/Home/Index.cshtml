@@ -1,0 +1,36 @@
+﻿@using ModelBinding.Models;
+
+<p><b>Teacher List</b></p>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+	</tr>
+	@foreach (Teacher item in Model.Teachers)
+	{
+		<tr>
+			<td>@item.id</td>
+			<td>@item.name</td>
+		</tr>
+	}
+</table>
+
+
+<p><b>Student List</b></p>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Surname</th>
+		<th>Age</th>
+	</tr>
+	@foreach (Student item in Model.Students)
+	{
+		<tr>
+			<td>@item.id</td>
+			<td>@item.name</td>
+			<td>@item.surname</td>
+			<td>@item.age</td>
+		</tr>
+	}
+</table>

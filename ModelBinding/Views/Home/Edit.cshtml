@@ -1,0 +1,8 @@
+﻿@model ModelBinding.Models.Student
+
+<form action="~/Home/Edit/@Model.id" method="post">
+	<input name="name" type="text" value="@Model.name" />
+	<input name="surname" type="text" value="@Model.surname"/>
+	<input name="age" type="text" value="@Model.age"/>
+	<input type="submit" value="Add" />
+</form>
